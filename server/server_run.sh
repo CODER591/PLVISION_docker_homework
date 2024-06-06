@@ -13,7 +13,6 @@ PORT=$1
 
 echo -e "${GREEN}Launching server... on ${PORT} port${NC}"
 
-#With -k option, it will listen for eternity.
 nc -v -k -l $PORT
 
 echo "Waiting for 30 seconds before exiting."
