@@ -6,6 +6,9 @@
 ``` bash
 docker run -d --network test_network netcat-server
 docker container run -p 5959:5959 --network test_network  netcat-server 5959
+#in detached mode.
+docker run -d -p 5959:5959  --network test_network netcat-server
+docker container -f <container hash>
 ```
 
 ### Connect from client to server in specified network

@@ -15,7 +15,7 @@ SERVER_PORT=$2
 
 echo "Connecting to netcat server at $SERVER_HOSTNAME:$SERVER_PORT..."
 ## attempt netcat connection, timeout of 2
-if (nc -v -z -w 2 $SERVER_HOSTNAME $SERVER_PORT)
+if (nc -v -z -w 2 $SERVER_HOSTNAME $SERVER_PORT < spam.txt)
 then
     echo -e "nc ${SERVER_HOSTNAME} ${SERVER_PORT} ... ${GREEN}ok${NC}"
 else
