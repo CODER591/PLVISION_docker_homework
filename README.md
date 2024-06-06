@@ -13,6 +13,7 @@ docker container -f <container hash>
 
 ### Connect from client to server in specified network
 ``` bash
-docker run -it --network test_network netcat-client 172.18.0.2 5959
-docker run -it --network test_network bash
+$ docker run -it --network test_network bash
+# in bash(in container), we are running
+$ echo "Hello!" | nc -v <ip-address> <port>
 ```

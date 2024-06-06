@@ -9,5 +9,6 @@ COPY spam.txt /
 
 RUN chmod +x /client_run.sh
 
+
 ENTRYPOINT ["/client_run.sh"]
 CMD ["127.0.0.1", "5959"]
